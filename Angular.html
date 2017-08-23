@@ -1,0 +1,23 @@
+<html ng-app="facebook">
+<head>
+<title>Facebook Window</title>
+
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="application/javascript" src="mainController.js"></script>		
+</head>
+<body ng-controller="mainController">
+
+{{userid}}
+<form name="searchUser">
+
+facebook id:<input type="search" placeholder="Enter FB user id" ng-model="userid"/>
+<input type="submit" value="search" ng-click="search()">
+
+</form>
+<div><h2>Name:{{user.name}}</h2></div>
+<div><h2>About:{{user.about}}</h2></div>
+
+
+
+</body>
+</html>
